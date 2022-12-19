@@ -2,10 +2,9 @@ import React , {useState} from 'react'
 
 function TodoForm(props) {
     const [input, setInput] = useState('');
-    //input'un icerisinde tutuluyor her degistirdigimizde
     const handleChange = e => {
         setInput(e.target.value);
-    }//state'i tutuyor.
+    }
 
     const handleSubmit = e => {
         e.preventDefault();
